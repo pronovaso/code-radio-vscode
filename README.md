@@ -1,9 +1,6 @@
 # Code Radio (vscode-extension)
 
-A simple vs code extension to listen to freeCodeCamp.org Code Radio.
-- Code Radio: 24/7 music designed for coding
-- Credit to freeCodeCamp.org Code Radio
-- Origin: <a href="https://coderadio.freecodecamp.org">https://coderadio.freecodecamp.org
+A simple vs code extension to listen freeCodeCamp.org Code Radio which is a 24/7 music designed for coding.
 
 <p align="center">
     <img height="100" src="https://raw.githubusercontent.com/kookob/code-radio-vscode/cad0b322708f0ca875c8c5523aaac1a13b9bc88c/logo.png">
@@ -35,4 +32,6 @@ A simple vs code extension to listen to freeCodeCamp.org Code Radio.
   - play: play the radio.
   - stop: stop the radio.
 ## Thanks
-code copy from https://github.com/Mostafa-wael/Quran-Radio
+- Code copy from [Quran-Radio](https://github.com/Mostafa-wael/)
+- Credit to freeCodeCamp.org Code Radio
+- Origin: [https://coderadio.freecodecamp.org](https://coderadio.freecodecamp.org)
