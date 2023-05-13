@@ -18,6 +18,5 @@ export function getMediaPlayer() {
     else {
         vlcPath = "/snap/bin/vlc"; // mac/linux
     }
-    console.log('vscode.workspace.getConfiguration(appName).get("vlc_path") || vlcPath', vscode.workspace.getConfiguration(appName).get("vlc_path") || vlcPath);
     return vscode.workspace.getConfiguration(appName).get("vlc_path") || vlcPath;
 }

@@ -32,6 +32,6 @@ A simple vs code extension to listen freeCodeCamp.org Code Radio which is a 24/7
   - play: play the radio.
   - stop: stop the radio.
 ## Thanks
-- Code copy from [Quran-Radio](https://github.com/Mostafa-wael/)
+- Code copy from [Quran-Radio](https://github.com/Mostafa-wael/Quran-Radio)
 - Credit to freeCodeCamp.org Code Radio
 - Origin: [https://coderadio.freecodecamp.org](https://coderadio.freecodecamp.org)

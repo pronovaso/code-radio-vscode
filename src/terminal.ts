@@ -41,7 +41,7 @@ export function stopTerminal() {
     killCmd = 'taskkill /im "vlc.exe" /f';
   } else { // mac/linux
     shellPath = linuxTerminal;
-    killCmd = 'kill -9 $(pgrep -n  vlc)';
+    killCmd = 'kill -9 $(pgrep -n vlc)';
   }
   terminal = vscode.window.createTerminal({
     shellPath: shellPath,
