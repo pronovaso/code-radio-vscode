@@ -1,10 +1,12 @@
 {
-  "name": "coderadio",
-  "displayName": "Code Radio",
+  "name": "coderadiolite",
+  "displayName": "Code Radio Lite",
   "description": "Code Radio: 24/7 music designed for coding",
   "keywords": [
     "coderadio",
+    "coderadiolite",
     "Code Radio",
+    "Code Radio Lite",
     "code-radio-vscode",
     "radio"
   ],

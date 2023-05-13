@@ -6,7 +6,7 @@ A simple vs code extension to listen to freeCodeCamp.org Code Radio.
 - Origin: <a href="https://coderadio.freecodecamp.org">https://coderadio.freecodecamp.org
 
 <p align="center">
-    <img height="100" src="https://raw.githubusercontent.com/kookob/code-radio-vscode/cad0b322708f0ca875c8c5523aaac1a13b9bc88c/radio.svg">
+    <img height="100" src="https://raw.githubusercontent.com/kookob/code-radio-vscode/cad0b322708f0ca875c8c5523aaac1a13b9bc88c/logo.png">
 </p>
 <div align="center">
 
