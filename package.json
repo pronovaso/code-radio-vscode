@@ -1,0 +1,65 @@
+{
+  "name": "coderadio",
+  "displayName": "Code Radio",
+  "description": "Code Radio: 24/7 music designed for coding",
+  "keywords": [
+    "coderadio",
+    "Code Radio",
+    "code-radio-vscode",
+    "radio"
+  ],
+  "publisher": "obroom",
+  "icon": "logo.png",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "homepage": "https://github.com/kookob/code-radio-vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kookob/code-radio-vscode.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "coderadio.play",
+        "title": "Code Radio - play"
+      },
+      {
+        "command": "coderadio.stop",
+        "title": "Code Radio - stop"
+      }
+    ],
+    "configuration": {
+      "title": "Code Radio",
+      "properties": {
+        "coderadio.vlc_path": {
+          "description": "vlc executable path",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "package": "yarn lint && yarn compile && vscde package"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.50.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "typescript": "^4.0.2"
+  }
+}
