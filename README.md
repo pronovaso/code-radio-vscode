@@ -34,5 +34,5 @@ A simple vs code extension to listen to freeCodeCamp.org Code Radio.
 - Type **Code Radio** and select the command you want to run.
   - play: play the radio.
   - stop: stop the radio.
-## Thank you
+## Thanks
 code copy from https://github.com/Mostafa-wael/Quran-Radio
