@@ -12,11 +12,12 @@ export const appName = "coderadio";
  */
 export function getMediaPlayer() {
     let vlcPath = "";
-    if (osPlatform().includes('win')) {
-        vlcPath = "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe";
-    }
-    else {
-        vlcPath = "/snap/bin/vlc"; // mac/linux
+    if (osPlatform().startsWith('win')) {
+        vlcPath = "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"; //win
+    } else if (osPlatform().startsWith('darwin')) {
+        vlcPath = "/Applications/VLC.app/Contents/MacOS/VLC"; //mac
+    } else {
+        vlcPath = "/snap/bin/vlc"; //linux
     }
     return vscode.workspace.getConfiguration(appName).get("vlc_path") || vlcPath;
 }

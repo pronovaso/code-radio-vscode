@@ -12,7 +12,7 @@
   ],
   "publisher": "obroom",
   "icon": "logo.png",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "engines": {
     "vscode": "^1.50.0"

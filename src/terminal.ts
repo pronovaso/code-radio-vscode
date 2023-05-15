@@ -18,12 +18,12 @@ let terminal: vscode.Terminal;
 export async function startTerminal() {
   terminal?.dispose(); // if there is a running instance
   terminal = vscode.window.createTerminal({
-    shellPath: osPlatform().includes('win') ? windowsTerminal : linuxTerminal,
+    shellPath: osPlatform().startsWith('win') ? windowsTerminal : linuxTerminal,
     name: appName,
     hideFromUser: true
   });
   terminal.sendText(startCommand);
-  if (osPlatform().includes('win')) {
+  if (osPlatform().startsWith('win')) {
     setTimeout(() => terminal.dispose(), 3000); // it's not necessary to keep the terminal open in windows
   }
 }
@@ -36,7 +36,7 @@ export function stopTerminal() {
   // for some reason, dispose in windows doesnt kill its child processes
   // so we manually kill vlc with taskkill command
   let shellPath, killCmd;
-  if (osPlatform().includes('win')) {
+  if (osPlatform().startsWith('win')) {
     shellPath = windowsTerminal;
     killCmd = 'taskkill /im "vlc.exe" /f';
   } else { // mac/linux
@@ -49,7 +49,7 @@ export function stopTerminal() {
     hideFromUser: true
   });
   terminal.sendText(killCmd);
-  if (osPlatform().includes('win')) {
+  if (osPlatform().startsWith('win')) {
     setTimeout(() => terminal.dispose(), 3000); // it's not necessary to keep the terminal open in windows
   }
 }
