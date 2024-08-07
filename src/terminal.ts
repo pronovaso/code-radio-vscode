@@ -6,7 +6,7 @@ import { appName, getMediaPlayer } from './utilities';
 // constants
 const windowsTerminal = "C:\\Windows\\System32\\cmd.exe";
 const linuxTerminal = "/bin/bash";
-const codeRadioUrl = "https://coderadio-admin.freecodecamp.org/radio/8010/radio.mp3";
+const codeRadioUrl = "https://coderadio-admin-v2.freecodecamp.org/listen/coderadio/radio.mp3";
 const startCommand = `"${getMediaPlayer()}" "${codeRadioUrl}" --intf dummy`;
 // variables
 let terminal: vscode.Terminal;
